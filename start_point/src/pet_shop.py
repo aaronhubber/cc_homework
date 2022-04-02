@@ -100,35 +100,31 @@ def add_pet_to_stock (pet_shop, new_pet):
     pet_shop["pets"].append(new_pet)
     return len(pet_shop["pets"])
 
-#q15
+#q15 find location of cash
 
 def get_customer_cash (total):
     return total["cash"]
 
-#q16
+#q16 sub from customer cash- total
 
 def remove_customer_cash (customer, cash):
     customer["cash"] -= cash
 
-#q17
+#q17 finding len of list in location
 
 def get_customer_pet_count (total):
     return len(total["pets"])
 
-#q18
+#q18 combining the erlier append to the above 
 def add_pet_to_customer (customer, new_pet):
     customer["pets"].append(new_pet)
     return len(customer["pets"])
 
+#q19, 20, 21 build on each other
 
-
-
-
-#q19
-# def customer_can_afford_pet (customer, new_pet);
-
-
-
-
-
+def customer_can_afford_pet (customer, new_pet):
+    if customer["cash"] >= new_pet["price"]:
+        return True
+    else:
+        return False
 
