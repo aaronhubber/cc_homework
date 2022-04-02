@@ -128,3 +128,11 @@ def customer_can_afford_pet (customer, new_pet):
     else:
         return False
 
+#22 
+def sell_pet_to_customer (pet_shop, new_pet, new_customer,):
+    add_pet_to_customer (new_customer, new_pet)
+    increase_pets_sold (pet_shop, 1)
+    remove_customer_cash (new_customer, 900)
+    add_or_remove_cash (pet_shop, 900)
+    
+
