@@ -102,8 +102,8 @@ def add_pet_to_stock (pet_shop, new_pet):
 
 #q15 find location of cash
 
-def get_customer_cash (total):
-    return total["cash"]
+def get_customer_cash (customer):
+    return customer["cash"]
 
 #q16 sub from customer cash- total
 
@@ -112,8 +112,8 @@ def remove_customer_cash (customer, cash):
 
 #q17 finding len of list in location
 
-def get_customer_pet_count (total):
-    return len(total["pets"])
+def get_customer_pet_count (customer):
+    return len(customer["pets"])
 
 #q18 combining the erlier append to the above 
 def add_pet_to_customer (customer, new_pet):
